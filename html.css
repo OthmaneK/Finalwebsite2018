@@ -178,13 +178,13 @@ ul:hover {
 
 
 .sidenav {
+	background: linear-gradient(-100deg, #2A1B0A, #2A1B0A, #0A122A, #29220A);
     height: 100%;
     width: 190px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
    	font-family: 'Permanent Marker', cursive;
@@ -212,3 +212,62 @@ ul:hover {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+img{
+	height: 100px;
+    width: 150px;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-left: 20px
+    padding-bottom: 30px;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #125e28;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Names{
+	font-family: 'Satisfy', cursive;
+	font-size: 20px;
+}
+.download{
+	padding-bottom: 45px;
+	margin-bottom: 80px;
+}
+
+
